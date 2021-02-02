@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class example</title>
+
+<!--This is where we're linking to Google Fonts to load the Lato font. Remember this needs to go inside your <head> tag-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+  </head>
+
+<!--Here I'm using the inline "style" attribute to tell the <body> element that it will use Lato for all of the text.-->
+  <body style="font-family:'Lato', sans-serif; line-height: 1.8em; background-color:azure">
+
+  <!--Notice the "margin:10em" is also part of this style; this is telling the entire div that it will have a slight margin around the whole page-->
+<div style="margin:10em;">
+
+<div>
+    <h1>A test example of HTML tags</h1>
+<!--this style attribute is telling <h2> that its font weight will be the lightest weight, 100-->
+    <h2 style="font-weight:100">What they look like on a webpage, and how to use them.</h2>
+  </div>
+
+  <!-- the <br> tag creates a break space and is handy to create quick visual separation-->
+<br>
+
+<div>
+  <h3>
+    For example, what does a table in HTML look like?
+  </h3>
+
+<!--this is how you start a table in HTML -->
+  <table>
+<tbody>
+
+<!--this is identifying your 1st horizontal row of the table-->
+<tr>
+	<td>1</td>
+	<td>2</td>
+  <td>3</td>
+  <td>4</td>
+  <td>5</td>
+</tr>
+
+<!--this is identifying your 2nd horizontal row of the table-->
+<tr>
+	<td>6</td>
+	<td>7</td>
+  <td>8</td>
+  <td>9</td>
+  <td>10</td>
+</tr>
+<!--this is identifying your 3rd horizontal row of the table-->
+<tr>
+	<td>11</td>
+	<td>12</td>
+  <td>13</td>
+  <td>14</td>
+  <td>15</td>
+</tr>
+<!--this is identifying your 4th horizontal row of the table-->
+<tr>
+	<td>16</td>
+	<td>17</td>
+  <td>18</td>
+  <td>19</td>
+  <td>20</td>
+</tr>
+
+</tbody>
+<!--ok, you're done with your table and you're closing the table element with the closing tag.-->
+</table>
+
+
+</div>
+<br>
+<div>
+  <h3>Now let's take a look at images in HTML.</h3>
+  <p>Remember that you have to call the link properly. So take a look at the folder structure for this example.<br>
+  Ok, so we have a folder called "img" and inside that folder, there's an image called meme.jpg<br>
+  To fetch this image in our code, we have to specify in our HTML that the browser needs to look inside the "img" folder and then name the image we want.<br>
+  The way you write that is by saying <b>img src="img/meme.jpg"</b><br>
+  <b>By the way! To bold your text just use the "b" tag!</b></p>
+
+  <!--This is where you're calling the image-->
+  <img src="img/memeislife.jpg" alt="A coding meme that makes fun of the complexity of coding" width="500" height="auto">
+  <!--Notice that when you resize your browser the image doesn't automatically resize.
+  Let's try to include an image that will resize by using a percentage for the width-->
+<div>
+  <img src="img/meme.jpg" alt="cat meme" width="50%" height="auto">
+  <!--Cool! percentages can be used to make images instantly responsive! This can be anything from 1% to 100%. It's just a percentage of your total browser width.-->
+</div>
+
+</div>
+
+<div>
+  <br>
+<h3>Ok. We know about tables, images, and headings. What about links?</h3>
+<p>A link tag, or "a" tag, is an <b>inline element</b>. This means that when you include it in your code, it isn't going to force a new row like block elements do;
+  it will fit into the rest of the line. Let's look at an example of what this looks like.
+  <br>
+  Ok, so we are currently still within our "p" element. Let's throw in link <a href="https://www.google.com/" target="_blank">here</a>. Notice how we're still in the same line?
+  <p>A link will appear differently in HTML than a button will. This is what a <button>button looks like</button><br>
+    BE AWARE! Buttons in HTML are intended to do something, not to take you somewhere. You'll notice that for buttons there is no href attribute;
+    that's because buttons are meant to be targeted using JavaScript to make something happen. Your "a" tags are for links, and your "button" tag is for action.
+</p>
+<br>
+</div>
+<!--the hr tag is handy for creating a line-->
+<hr>
+
+
+<div>
+<!--The style here is saying everything in this div (all this text) will be the HTML color TOMATO-->
+<div style="color:Tomato">
+<h3>Some more tags for typography:</h3>
+
+
+<p>  <b> - Bold text</b></p>
+<p>   <strong> - Important text</strong> (basically same thing as bold text)</p>
+<p>   <i> - Italic text</i></p>
+<p>   <em> - Emphasized text</em></p>
+<p>   <small> - Smaller text</small></p>
+<p>   <del> - Deleted text</del></p>
+<p>   <ins> - Inserted text</ins></p>
+
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<br>
+<hr>
+<h3>This is an ordered list</h3>
+  <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<br>
+<hr>
+<h3>This is a description list</h3>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<br>
+<hr>
+<h3>This is an unordered list</h3>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+</div>
+
+<br>
+<hr>
+<h2>Resources</h2>
+<p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">List of all the HTML color names </a></p>
+<p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">How to make links</a></p>
+<p><a href="https://www.w3schools.com/tags/default.asp" target="_blank">HTML tag references</a></p>
+<p><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank">HTML images</a></p>
+<p><a href="https://developers.google.com/fonts/docs/getting_started" target="_blank">How to include Google Fonts in your document</a></p>
+
+
+</div>
+
+</div>
+
+  </body>
+
+</html>
